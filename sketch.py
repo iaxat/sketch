@@ -10,14 +10,9 @@ class Sketch():
         cv2.imshow('scren', read_image)
         cv2.waitKey(0)
 
+    
 
 
-
-
-    def main(self):
-        print('')
-
-    if __name__ == '__main__':
-        main()
 
 get_sketch = Sketch()
+get_sketch.read_image()
