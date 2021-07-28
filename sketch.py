@@ -4,11 +4,20 @@ import cv2 # import open cv
 
 
 class Sketch():
-    def __init__(self) -> None:
-        get_image = input('Image Name Path: ')
+    def read_image(self):
+        get_image_file = input('Path or file name of the image: ')
+        read_image = cv2.imread(get_image_file)
+        cv2.imshow('scren', read_image)
+        cv2.waitKey(0)
 
-    # def read_image(self):
 
 
+
+
+    def main(self):
+        print('')
+
+    if __name__ == '__main__':
+        main()
 
 get_sketch = Sketch()
